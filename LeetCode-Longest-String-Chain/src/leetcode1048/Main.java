@@ -1,4 +1,4 @@
-package chain;
+package leetcode1048;
 
 import java.util.Arrays;
 
