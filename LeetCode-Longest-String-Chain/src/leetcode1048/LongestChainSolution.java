@@ -8,9 +8,8 @@ public class LongestChainSolution {
     public int longestStrChain(String[] words) {
         Map<String, Integer> dp = new HashMap<>();
         
-        Arrays.sort(words, (a,b) -> a.length() - b.length());
+        Arrays.sort(words, (a,b) -> a.length() - b.length()); // Need to be sorted
         
-        // For each element in the array
         for(String word : words){
             int max = 0;
             
