@@ -14,7 +14,6 @@ public class LongestChainSolution {
             int max = 0;
             
             for(int i = 0; i < word.length(); i++){
-                
                 String previous = word.substring(0, i) + word.substring(i + 1);
                 
                 max = Math.max(max, dp.getOrDefault(previous, 0) + 1);
